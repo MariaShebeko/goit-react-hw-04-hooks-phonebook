@@ -1,0 +1,58 @@
+.list {
+  list-style: none;
+}
+
+.total {
+  text-align: center;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iconAddressBook {
+  margin-right: 7px;
+  transition: fill 300ms ease-in-out;
+}
+
+.text {
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 300ms ease-in-out;
+  display: flex;
+  align-items: center;
+}
+.item:hover .text,
+.item:hover .iconAddressBook {
+  color: #4f95da;
+  fill: #4f95da;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid #4f95da;
+  border-radius: 5px;
+  color: #4f95da;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-align: center;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.button:hover {
+  color: #fff;
+  box-shadow: 0 0 40px 40px #4f95da inset;
+}
+
+.iconBin {
+  margin-left: 5px;
+  fill: #4f95da;
+  transition: fill 300ms ease-in-out;
+}
+.button:hover .iconBin {
+  fill: #fff;
+}

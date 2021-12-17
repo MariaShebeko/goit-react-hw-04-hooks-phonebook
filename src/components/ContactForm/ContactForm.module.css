@@ -1,0 +1,62 @@
+.inputWrapper {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.input {
+  font-size: 16px;
+  padding: 10px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+.input:focus {
+  outline: none;
+}
+
+.label {
+  color: #999;
+  font-size: 18px;
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 15px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.input:focus ~ label,
+.input:valid ~ label {
+  top: -15px;
+  font-size: 14px;
+  color: #4f95da;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid #4f95da;
+  border-radius: 5px;
+  color: #4f95da;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-align: center;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.button:hover {
+  color: #fff;
+  box-shadow: 0 0 40px 40px #4f95da inset;
+}
+
+.iconUserPlus {
+  margin-left: 5px;
+  fill: #4f95da;
+  transition: fill 300ms ease-in-out;
+}
+.button:hover .iconUserPlus {
+  fill: #fff;
+}
